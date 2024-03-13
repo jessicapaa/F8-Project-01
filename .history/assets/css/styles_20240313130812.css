@@ -105,6 +105,9 @@ a {
 
 /* css hero */
 
+.hero {
+    margin-top: 130px;
+}
 .hero .info {
     width: 51%;
 }
