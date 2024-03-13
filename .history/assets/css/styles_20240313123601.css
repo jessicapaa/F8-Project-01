@@ -46,16 +46,11 @@ a {
 }
 /* header fixed */
 .fix-header {
-    position: sticky;
-    padding-top: 26px;
-    z-index: 1;
-    top: -26px;
     background: #e6f0ff;
+    padding: 24px 0;
 }
 /* css header */
-.hero-wrap {
-    display: flex;
-    flex-direction: column;
+.header {
     height: 100vh;
     background: #e6f0ff;
     position: relative;
@@ -64,7 +59,8 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    padding-top: 12px 0;
+    background: rebeccapurple;
 }
 
 .navbar ul {
@@ -81,9 +77,6 @@ a {
     font-size: 1.4rem;
     color: #4f5361;
     padding: 8px 14px;
-}
-.navbar ul a:hover {
-    text-decoration: underline;
 }
 
 .navbar .action-link {

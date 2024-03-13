@@ -82,9 +82,6 @@ a {
     color: #4f5361;
     padding: 8px 14px;
 }
-.navbar ul a:hover {
-    text-decoration: underline;
-}
 
 .navbar .action-link {
     font-weight: 500;

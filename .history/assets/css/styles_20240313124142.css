@@ -76,7 +76,7 @@ a {
     margin-left: auto;
 }
 
-.navbar ul a {
+.hero-wrap .navbar ul a {
     font-weight: 500;
     font-size: 1.4rem;
     color: #4f5361;

@@ -53,9 +53,7 @@ a {
     background: #e6f0ff;
 }
 /* css header */
-.hero-wrap {
-    display: flex;
-    flex-direction: column;
+.header {
     height: 100vh;
     background: #e6f0ff;
     position: relative;
@@ -81,9 +79,6 @@ a {
     font-size: 1.4rem;
     color: #4f5361;
     padding: 8px 14px;
-}
-.navbar ul a:hover {
-    text-decoration: underline;
 }
 
 .navbar .action-link {

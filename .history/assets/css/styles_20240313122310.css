@@ -44,18 +44,9 @@ a {
 .btn:hover {
     opacity: 0.9;
 }
-/* header fixed */
-.fix-header {
-    position: sticky;
-    padding-top: 26px;
-    z-index: 1;
-    top: -26px;
-    background: #e6f0ff;
-}
+
 /* css header */
-.hero-wrap {
-    display: flex;
-    flex-direction: column;
+.header {
     height: 100vh;
     background: #e6f0ff;
     position: relative;
@@ -64,7 +55,7 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    padding-top: 38px;
 }
 
 .navbar ul {
@@ -81,9 +72,6 @@ a {
     font-size: 1.4rem;
     color: #4f5361;
     padding: 8px 14px;
-}
-.navbar ul a:hover {
-    text-decoration: underline;
 }
 
 .navbar .action-link {
@@ -621,6 +609,7 @@ a {
     background: #f9f9f9;
 }
 .footer .social-link:hover {
+    background: red;
     opacity: 0.8;
 }
 

@@ -83,7 +83,7 @@ a {
     padding: 8px 14px;
 }
 .navbar ul a:hover {
-    text-decoration: underline;
+    text-decoration: line-through;
 }
 
 .navbar .action-link {
