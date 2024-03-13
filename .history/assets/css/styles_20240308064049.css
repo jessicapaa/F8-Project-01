@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    /* font-family: ; */
+    font-family: "Poppins";
+}
+
+.header {
+    height: 100vh;
+    background: #e6f0ff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
