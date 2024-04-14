@@ -1,0 +1,84 @@
+/* PC*/
+@media screen and (min-width: 992px) {
+    .menu-checkbox {
+        display: none;
+    }
+    .menu-drawer {
+        display: none;
+    }
+    .show-on-mobile {
+        display: none;
+    }
+}
+/* TABLET & MOBILE */
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .header__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu-checkbox {
+        width: 24px;
+        color: #666;
+    }
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgb(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s ease-out;
+    }
+    .menu-drawer {
+        padding: 40px;
+        position: fixed;
+        inset: 0 30% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.25s ease-out;
+    }
+    .input-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    .input-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0%);
+    }
+    .menu-drawer ul {
+        padding-top: 24px;
+    }
+    .menu-drawer ul a {
+        display: block;
+        padding: 18px 0;
+        color: #333;
+        font-weight: 500;
+    }
+}
+/* TABLE */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767.98px) {
+    .actions {
+        display: none;
+    }
+    .separate {
+        border-top: 1px solid #ebebeb;
+    }
+}

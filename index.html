@@ -23,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
 
@@ -34,25 +35,38 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header pc-->
     <header class="fix-header">
         <div class="content">
             <nav class="navbar">
+                <!-- Tablet/Mobile Toggle Menu -->
+                <label for="input-checkbox" id="menu-checkbox" class="menu-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+
+                    </svg>
+                </label>
                 <!-- logo -->
                 <a href="#">
-                    <img src="./assets/img/logo.svg" alt="Besnik.">
-
+                    <img src="./assets/img/logo.svg" alt="Besnik." class="header__logo">
                 </a>
                 <!-- navigation -->
-                <ul>
+                <ul id="nav-pc">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#resources">Resources</a></li>
                     <li><a href="#contact">Contact</a></li>
+
+                    <li class="show-on-mobile"><a class=" separate" href="#!">Sign In</a></li>
+                    <li class="show-on-mobile"><a href="#!">Sign Up</a></li>
                 </ul>
 
                 <!-- Action -->
@@ -64,9 +78,35 @@
         </div>
     </header>
 
-    <!-- main -->
-    <main id="home">
+    <!-- header mobile -->
+    <header class="header-mobile">
+        <input type="checkbox" hidden class="input-checkbox" id="input-checkbox">
 
+        <!-- Overlay -->
+        <label for="input-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu Drawer -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <a href="#">
+                <img src="./assets/img/logo.svg" alt="Besnik.">
+            </a>
+
+            <!-- Menu -->
+            <ul id="nav-mobile">
+
+            </ul>
+            <script>
+                const navPc = document.querySelector("#nav-pc")
+                const navMobile = document.querySelector("#nav-mobile")
+
+                // navMobile.innerHTML = navPc.innerHTML;
+                navMobile.innerHTML = navPc.innerHTML;
+            </script>
+        </div>
+    </header>
+    <!-- main -->
+    <main id="home" hidden>
         <!-- hero -->
         <div class="hero-wrap">
             <div class="content">
@@ -87,7 +127,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Clients -->
         <div class="clients">
             <div class="content">
@@ -122,7 +161,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Guides -->
         <div class="guides" id="services">
             <div class="content">
@@ -163,7 +201,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Featured -->
         <div class="featured" id="features">
             <div class="content">
@@ -267,7 +304,6 @@
                 </div>
             </div>
         </div>
-
         <!-- stats -->
         <div class="stats" id="resources">
             <div class="content">
@@ -355,7 +391,6 @@
                 </div>
             </div>
         </div>
-
         <!-- subscription -->
         <div class="subscription" id="contact">
             <div class="content">
@@ -370,11 +405,9 @@
                 </div>
             </div>
         </div>
-
     </main>
-
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
         <div class="content">
             <div class="row row-top">
                 <!-- Product column -->
