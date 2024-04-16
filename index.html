@@ -97,7 +97,7 @@
 
             </ul>
             <script>
-                const navPc = document.querySelector("#nav-pc")
+                                const navPc = document.querySelector("#nav-pc")
                 const navMobile = document.querySelector("#nav-mobile")
 
                 // navMobile.innerHTML = navPc.innerHTML;
@@ -106,7 +106,7 @@
         </div>
     </header>
     <!-- main -->
-    <main id="home" hidden>
+    <main id="home">
         <!-- hero -->
         <div class="hero-wrap">
             <div class="content">
@@ -140,7 +140,7 @@
                 </div>
                 <div class="row row-desc">
                     <p class="desc">More than 45,000+ companies trust besnik</p>
-                    <p class="desc desc-rating">5 Star Ratings (2k+ Review)</p>
+                    <p class="desc hide-on-mobile desc-rating">5 Star Ratings (2k+ Review)</p>
                 </div>
                 <div class="images">
                     <a href="#!">
@@ -212,7 +212,7 @@
                         <p class="desc">
                             Everything you need to know when you're looking
                         </p>
-                        <a href="#!" class="link">
+                        <a class="hide-on-mobile" href="#!" class="link">
                             <span>View All Properties</span>
                             <img src="./assets/img/arrow-right.svg" alt="arrow right" class="arrow">
                         </a>
@@ -302,6 +302,7 @@
                         </div>
                     </div>
                 </div>
+               <div class="view-all show-on-mobile"> <a href="#!" class="btn">View All Properties</a></div>
             </div>
         </div>
         <!-- stats -->
@@ -407,7 +408,7 @@
         </div>
     </main>
     <!-- footer -->
-    <footer class="footer" style="display: none;">
+    <footer class="footer" >
         <div class="content">
             <div class="row row-top">
                 <!-- Product column -->
